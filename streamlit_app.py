@@ -51,8 +51,6 @@ streamlit.write('The User Entered',fruit_choice)
 #streamlit.text(fruityvice_response.json())
 
 
-streamlit.stop()
-
 def get_fruit_load_list():
   with my_cnx.cursor() as my_cur:
     my_cur.execute("Select * from fruit_load_list")
@@ -65,7 +63,8 @@ if streamlit.button('Get Fruit list'):
   streamlit.dataframe(my_data_rows)
 
 
-  
+streamlit.stop()
+
 
     
 
