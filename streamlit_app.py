@@ -39,7 +39,7 @@ try :
     streamlit.error('Please select a fruit to get info')
   else :
     bck_frm_fun = get_fruityvice_data(fruit_choice)
-    streamlit.dataframe(fruity_normalize)
+    streamlit.dataframe(bck_frm_fun)
 
 
 
